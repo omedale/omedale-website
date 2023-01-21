@@ -48,7 +48,7 @@ html {
   height: 100%;
 }
 :root {
-  --main-primary-color: #ffb400;
+  --main-primary-color: #0c5bcf;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -753,6 +753,10 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   font-size: 33px;
   font-weight: 300;
   top: 2px;
+}
+
+.box-percent h3:after  {
+  content: "%" !important;
 }
 
 .about .box-stats p {

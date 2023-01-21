@@ -2,25 +2,24 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   2018 - Present",
-    position: " Web Developer",
-    compnayName: "Envato",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "   2021 - Present",
+    position: " Senior Software Engineer",
+    compnayName: "Factorial",
+    details: `  Factorial human resources (HR) software helps CEOs and HRs streamline employee time tracking,
+      time-off management, performance, and more`,
   },
   {
-    year: "2013 - 2018",
-    position: " UI/UX Designer",
-    compnayName: "Themeforest",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    year: "2018 - 2021",
+    position: " Senior Software Engineer",
+    compnayName: "Fluxx",
+    details: `Fluxx Labs provides a collaborative network for funders and grantees.`,
   },
   {
-    year: "2005 - 2013",
-    position: "Consultant",
-    compnayName: "Videohive",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "Mar 2018 - Jun 2018",
+    position: "Software Engineer",
+    compnayName: "Grain",
+    details: `Grain is an online food company that believes in improving lives 
+      through meaningful food experiences`,
   },
 ];
 

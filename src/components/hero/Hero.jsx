@@ -6,14 +6,13 @@ import AboutMain from "../about";
 import Image from "next/image";
 
 const heroContent = {
-  heroImage: "/assets/img/hero/dark.jpg",
+  heroImage: "/assets/img/hero/me.jpg",
   heroMobileImage: heroImgMobile,
-  heroTitleName: "steve milner",
-  heroDesignation: "web designer",
-  heroDescriptions: `I'm a Tunisian based web designer & front‑end developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
-  building excellent software that improves the lives of those
-  around me.`,
+  heroTitleName: "oluwafemi medale",
+  heroDesignation: "software engineer",
+  heroDescriptions: `Experienced Software Engineer with a Bachelor of Technology (B.Tech.)
+    focused on Computer Science with experience in building and writing DRY, testable, and efficient code.
+    My work ethic is strong with great attention to detail, problem-solving and analytical thinking skills.`,
   heroBtn: "more about me",
 };
 
@@ -36,9 +35,9 @@ const Hero = () => {
               src={heroContent.heroMobileImage}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
-              // style={{width:'100%',height:'100%'}}
+            // style={{width:'100%',height:'100%'}}
             />
-            <h1 className="text-uppercase poppins-font">
+            <h1 className="text-capitalize poppins-font">
               {"I'm"} {heroContent.heroTitleName}.
               <span>{heroContent.heroDesignation}</span>
             </h1>

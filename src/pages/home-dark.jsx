@@ -14,9 +14,9 @@ import SwitchDark from "../components/switch/SwitchDark";
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
   { icon: "fa-user", menuName: "About" },
-  { icon: "fa-briefcase", menuName: "Portfolio" },
   { icon: "fa-envelope-open", menuName: "Contact" },
-  { icon: "fa-comments", menuName: "Blog" },
+  // { icon: "fa-briefcase", menuName: "Portfolio" },
+  // { icon: "fa-comments", menuName: "Blog" },
 ];
 
 const HomeDark = () => {
@@ -25,7 +25,7 @@ const HomeDark = () => {
   }, []);
   return (
     <Wrapper>
-      <SEO pageTitle={"Home Dark"} />
+      <SEO pageTitle={"Oluwafemi Medale"} />
 
       <div className="yellow">
         <SwitchDark />
@@ -71,23 +71,6 @@ const HomeDark = () => {
               </div>
             </TabPanel>
             {/* About Content Ends */}
-
-            {/* Portfolio Content Starts */}
-            <TabPanel className="portfolio professional">
-              <div
-                className="title-section text-start text-sm-center"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <h1>
-                  my <span>portfolio</span>
-                </h1>
-                <span className="title-bg">works</span>
-              </div>
-              {/* End title */}
-              <Portfolio />
-            </TabPanel>
-            {/* Portfolio Content Ends */}
 
             {/* Contact Content Starts */}
             <TabPanel className="contact">
@@ -135,6 +118,23 @@ const HomeDark = () => {
               {/* End .container */}
             </TabPanel>
             {/* Contact Content Ends */}
+
+            {/* Portfolio Content Starts */}
+            <TabPanel className="portfolio professional">
+              <div
+                className="title-section text-start text-sm-center"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                <h1>
+                  my <span>portfolio</span>
+                </h1>
+                <span className="title-bg">works</span>
+              </div>
+              {/* End title */}
+              <Portfolio />
+            </TabPanel>
+            {/* Portfolio Content Ends */}
 
             {/* Blog Content Starts */}
             <TabPanel className="blog">
