@@ -118,49 +118,6 @@ const HomeDark = () => {
               {/* End .container */}
             </TabPanel>
             {/* Contact Content Ends */}
-
-            {/* Portfolio Content Starts */}
-            <TabPanel className="portfolio professional">
-              <div
-                className="title-section text-start text-sm-center"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <h1>
-                  my <span>portfolio</span>
-                </h1>
-                <span className="title-bg">works</span>
-              </div>
-              {/* End title */}
-              <Portfolio />
-            </TabPanel>
-            {/* Portfolio Content Ends */}
-
-            {/* Blog Content Starts */}
-            <TabPanel className="blog">
-              <div
-                className="title-section text-start text-sm-center "
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <h1>
-                  my <span>blog</span>
-                </h1>
-                <span className="title-bg">posts</span>
-              </div>
-              <div
-                className="container"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                {/*  Articles Starts  */}
-                <div className="row pb-50">
-                  <Blog />
-                </div>
-                {/* Articles Ends */}
-              </div>
-            </TabPanel>
-            {/* Blog Content Ends */}
           </div>
         </Tabs>
       </div>
