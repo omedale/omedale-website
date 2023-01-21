@@ -9,6 +9,13 @@ const experienceContent = [
       time-off management, performance, and more`,
   },
   {
+    year: "   2021 - Present",
+    position: " Senior Software Engineer",
+    compnayName: "Factorial",
+    details: `  Factorial human resources (HR) software helps CEOs and HRs streamline employee time tracking,
+      time-off management, performance, and more`,
+  },
+  {
     year: "2018 - 2021",
     position: " Senior Software Engineer",
     compnayName: "Fluxx",
@@ -20,6 +27,13 @@ const experienceContent = [
     compnayName: "Grain",
     details: `Grain is an online food company that believes in improving lives 
       through meaningful food experiences`,
+  },
+  {
+    year: "2015 - 2017",
+    position: "FREELANCE WEB DEVELOPER",
+    compnayName: "System Tonic",
+    details: `System Tonic helps organisations and individuals create web applications
+      using advanced designs and technologies for modern and awesome people.`,
   },
 ];
 
