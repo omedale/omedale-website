@@ -8,6 +8,9 @@ export const metadata = {
   title: "Home",
   description:
     "Writing, favorite quotes, and reflective notes from Oluwafemi Medale on software, discipline, and a quieter kind of ambition.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function HomePage() {

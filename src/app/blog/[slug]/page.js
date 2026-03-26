@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -45,8 +48,32 @@ export default async function BlogPostPage({ params }) {
 
   const relatedPosts = writingPosts.filter((entry) => entry.slug !== post.slug).slice(0, 2);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    url: `https://omedale.com/blog/${post.slug}`,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: "Oluwafemi Medale",
+      url: "https://omedale.com/about",
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Oluwafemi Medale",
+      url: "https://omedale.com",
+    },
+    keywords: post.tags,
+  };
+
   return (
     <div className="page-stack">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <ReadingProgress />
       <section className="page-stack">
         <div>

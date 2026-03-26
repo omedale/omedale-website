@@ -1,6 +1,6 @@
 export default function OrbitArtwork({ accent = "#d27b49" }) {
   return (
-    <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
         <linearGradient id="omedale-orbit-fill" x1="84" y1="56" x2="408" y2="404" gradientUnits="userSpaceOnUse">
           <stop stopColor="#1d242d" />

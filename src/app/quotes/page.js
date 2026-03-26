@@ -4,6 +4,9 @@ export const metadata = {
   title: "Quotes I Love",
   description:
     "A small collection of favorite quotes on work, life, clarity, time, courage, and interior steadiness.",
+  alternates: {
+    canonical: "/quotes",
+  },
 };
 
 export default function QuotesPage() {

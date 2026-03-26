@@ -1,6 +1,6 @@
 export default function SectionArtwork() {
   return (
-    <svg viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <rect x="16" y="16" width="388" height="288" rx="28" fill="#141a21" />
       <path d="M91 234C127 171 177 132 241 118C280 110 313 113 347 128" stroke="#f1e8dc" strokeOpacity="0.18" strokeWidth="2" strokeLinecap="round" />
       <path d="M76 87H342" stroke="#f1e8dc" strokeOpacity="0.08" strokeWidth="1.5" />

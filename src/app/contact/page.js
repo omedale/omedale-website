@@ -4,6 +4,9 @@ export const metadata = {
   title: "Contact",
   description:
     "The best public places to reach Oluwafemi Medale, with a preference for thoughtful conversation over heavy contact workflows.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

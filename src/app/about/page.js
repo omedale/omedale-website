@@ -18,11 +18,34 @@ export const metadata = {
   title: "About",
   description:
     "A personal introduction to Oluwafemi Medale, his working style, values, and the quieter themes shaping life beyond a public profile.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Oluwafemi Medale",
+    alternateName: "Femi",
+    url: "https://omedale.com/about",
+    jobTitle: "Software Engineer",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lagos",
+      addressCountry: "NG",
+    },
+    sameAs: [siteData.github, siteData.linkedin],
+    description: siteData.aboutIntro,
+  };
+
   return (
     <div className="page-stack">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       <section className="page-hero">
         <div>
           <span className="eyebrow">About</span>

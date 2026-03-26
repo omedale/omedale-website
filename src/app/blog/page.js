@@ -5,6 +5,9 @@ export const metadata = {
   title: "Writing",
   description:
     "Essays and notes by Oluwafemi Medale on engineering, attention, faith, discipline, and the long work of becoming more grounded.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogIndexPage() {

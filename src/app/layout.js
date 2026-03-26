@@ -4,16 +4,23 @@ import SiteHeader from "../components/site/SiteHeader";
 import { siteData } from "../data/site";
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL("https://omedale.com"),
   title: {
     default: siteData.name,
     template: `%s | ${siteData.name}`,
   },
   description: siteData.description,
+  authors: [{ name: "Oluwafemi Medale", url: "https://omedale.com" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: siteData.name,
     description: siteData.description,
     type: "website",
+    url: "https://omedale.com",
+    siteName: siteData.name,
+    locale: "en_US",
     images: [
       {
         url: "/opengraph-image",
@@ -31,10 +38,34 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  themeColor: "#151b22",
+  colorScheme: "dark",
+};
+
 export default function RootLayout({ children }) {
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteData.name,
+    url: "https://omedale.com",
+    description: siteData.description,
+    author: {
+      "@type": "Person",
+      name: "Oluwafemi Medale",
+      url: "https://omedale.com/about",
+      jobTitle: "Software Engineer",
+      sameAs: [siteData.github, siteData.linkedin],
+    },
+  };
+
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <div className="site-shell">
           <SiteHeader />
 
