@@ -1,7 +1,22 @@
 import "./globals.css";
 import Link from "next/link";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import SiteHeader from "../components/site/SiteHeader";
 import { siteData } from "../data/site";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-manrope",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+  variable: "--font-cormorant",
+});
 
 export const metadata = {
   metadataBase: new URL("https://omedale.com"),
@@ -60,7 +75,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${manrope.variable} ${cormorant.variable}`}>
       <body>
         <script
           type="application/ld+json"
