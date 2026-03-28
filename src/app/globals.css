@@ -1,8 +1,8 @@
 :root {
   --page-bg: #151b22;
   --page-bg-deep: #0b0f13;
-  --card-bg: rgba(19, 24, 30, 0.82);
-  --card-bg-strong: rgba(16, 20, 25, 0.94);
+  --card-bg: rgba(19, 24, 30, 0.92);
+  --card-bg-strong: rgba(16, 20, 25, 0.96);
   --text-main: #f1e8dc;
   --text-soft: #c8b9a8;
   --text-muted: #93877a;
@@ -46,6 +46,8 @@ body::after {
   inset: 0;
   pointer-events: none;
   z-index: -1;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 body::before {
@@ -82,8 +84,11 @@ a {
   top: 0;
   z-index: 30;
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   background: linear-gradient(180deg, rgba(13, 17, 21, 0.9), rgba(13, 17, 21, 0.72));
   border-bottom: 1px solid rgba(255, 238, 221, 0.08);
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .site-header__inner,
@@ -316,6 +321,7 @@ a {
   gap: clamp(32px, 5vw, 48px);
   position: relative;
   z-index: 0;
+  transform: translateZ(0);
 }
 
 .hero-card,
@@ -331,13 +337,12 @@ a {
   position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
-  background: var(--card-bg);
-  background-image:
+  background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
     radial-gradient(circle at top right, rgba(210, 123, 73, 0.1), transparent 28%),
-    radial-gradient(circle at left bottom, rgba(114, 143, 132, 0.08), transparent 24%);
+    radial-gradient(circle at left bottom, rgba(114, 143, 132, 0.08), transparent 24%),
+    var(--card-bg);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
   border-radius: var(--radius-lg);
 }
 
@@ -730,6 +735,8 @@ a {
   gap: 18px;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(255, 239, 222, 0.08);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .section-head .ghost-link,
